@@ -1,0 +1,565 @@
+@charset "utf-8";
+/* ==========================================================================
+   SELF-HOSTED WEB FONTS
+   Served from assets/fonts/ on this site's own origin. These pages make
+   NO external requests of any kind: no Google Fonts, no CDN, no analytics,
+   no scripts, and every image is a local file.
+
+   Where Google offers a variable font one file covers the whole weight
+   axis, which is both smaller than the separate static weights and what
+   makes the opsz axis used below actually do something. The declared
+   weight range is wider than this site uses on purpose: it is byte for
+   byte the same file and it guarantees the browser never synthesizes a
+   weight it was not given.
+
+   Only latin and latin-ext are included. The unicode-range on each rule
+   means a browser downloads only the files a page actually needs.
+   ========================================================================== */
+/* Cormorant Garamond 300-700 variable italic — latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("../fonts/cormorant-garamond-300-700-italic-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* Cormorant Garamond 300-700 variable italic — latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("../fonts/cormorant-garamond-300-700-italic-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Cormorant Garamond 300-700 variable — latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("../fonts/cormorant-garamond-300-700-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* Cormorant Garamond 300-700 variable — latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("../fonts/cormorant-garamond-300-700-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Karla 200-800 variable — latin-ext */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("../fonts/karla-200-800-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* Karla 200-800 variable — latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("../fonts/karla-200-800-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ==========================================================================
+   Stillpoint Yin & Meditation, Greenpoint, Brooklyn
+
+   The design IS the vertical rhythm. One column, never two. No cards, no
+   grid of tiles, no sidebar, no boxes. Sections are separated by twelve rems
+   of empty dark so that scrolling the page takes longer than it needs to.
+
+   Contrast note: the brief asks for a low-contrast page, and the page is low
+   contrast — nothing here is brighter than moon silver and there are almost
+   no edges. Running text is the exception and is held at 9.7:1, because a
+   design preference is not a reason to make words hard to read.
+
+   0.  Self-hosted web fonts
+   1.  Tokens
+   2.  Reset and base
+   3.  Typography — the whole personality of the site
+   4.  The column, and the space between things
+   5.  Masthead
+   6.  Hero
+   7.  Sequence (the six-week course, numbered)
+   8.  Components: figures, notes, forms, ad slots
+   9.  Footer
+   10. Responsive, reduced motion, print
+   ========================================================================== */
+
+/* ------------------------------------------------------------------ 1. */
+:root {
+  --ink:      #0E1120;   /* deep ink    — page ground                     */
+  --slate:    #20243A;   /* indigo slate — raised passages                */
+  --moon:     #C9CEDC;   /* moon silver — running text, 9.7:1 on slate    */
+  --moon-dim: #9AA3BA;   /* moon silver stepped down, for secondary text  */
+  --amber:    #D9A441;   /* candle amber — one accent, used sparingly     */
+  --edge:     #666E92;   /* the only border colour, 3.06:1 on slate       */
+  --edge-faint: rgba(201, 206, 220, 0.14);  /* decorative rules only      */
+
+  /* type scale — 1.250 major third, and deliberately tall at the top */
+  --step--1: clamp(0.8125rem, 0.79rem + 0.11vw, 0.875rem);
+  --step-0:  clamp(1.0625rem, 1.02rem + 0.22vw, 1.1875rem);
+  --step-1:  clamp(1.33rem, 1.26rem + 0.33vw, 1.5rem);
+  --step-2:  clamp(1.66rem, 1.52rem + 0.68vw, 2.1rem);
+  --step-3:  clamp(2.07rem, 1.80rem + 1.35vw, 2.95rem);
+  --step-4:  clamp(2.59rem, 2.08rem + 2.55vw, 4.15rem);
+  --step-5:  clamp(3.24rem, 2.32rem + 4.60vw, 6.00rem);
+
+  --s1: 0.25rem; --s2: 0.5rem;  --s3: 0.75rem; --s4: 1rem;
+  --s5: 1.5rem;  --s6: 2.5rem;  --s7: 4rem;    --s8: 6rem;
+  --s9: 9rem;    --s10: 12rem;                 /* the silence between sections */
+
+  --column: 36rem;        /* ~62 characters of Cormorant at this size */
+  --column-wide: 52rem;
+}
+
+/* ------------------------------------------------------------------ 2. */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--moon);
+  font-family: "Cormorant Garamond", Garamond, Georgia, serif;
+  font-size: var(--step-0);
+  font-weight: 400;
+  line-height: 1.95;           /* serif body text, so it gets the extra leading */
+  letter-spacing: 0.004em;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+a { color: var(--moon); text-decoration-thickness: 1px; text-underline-offset: 0.22em; }
+a:hover { color: var(--amber); }
+
+:focus-visible { outline: 2px solid var(--amber); outline-offset: 4px; }
+
+.skip {
+  position: absolute; left: -9999px; top: 0; z-index: 40;
+  background: var(--moon); color: var(--ink); padding: var(--s3) var(--s5);
+}
+.skip:focus { left: 0; }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+/* ------------------------------------------------------------------ 3. */
+h1, h2, h3 {
+  font-family: "Cormorant Garamond", Garamond, Georgia, serif;
+  font-weight: 300;            /* light, at size — the point of this typeface */
+  line-height: 1.08;
+  letter-spacing: -0.005em;
+  color: var(--moon);
+  margin: 0 0 var(--s5);
+  text-wrap: balance;
+}
+h1 { font-size: var(--step-5); }
+h2 { font-size: var(--step-3); margin-bottom: var(--s6); }
+h3 { font-size: var(--step-1); font-weight: 400; margin-bottom: var(--s4); }
+
+p { margin: 0 0 var(--s5); }
+p:last-child { margin-bottom: 0; }
+em { font-style: italic; }
+strong { font-weight: 600; }
+
+/* Karla appears only where something is functional: labels, times, prices,
+   navigation. Never for reading. */
+.fn {
+  font-family: Karla, "Helvetica Neue", Arial, sans-serif;
+  font-size: var(--step--1);
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+
+.lede {
+  font-size: var(--step-2);
+  line-height: 1.55;
+  font-weight: 300;
+  color: var(--moon);
+  margin-bottom: var(--s7);
+}
+
+.dim { color: var(--moon-dim); }
+.amber { color: var(--amber); }
+
+.stamp {
+  font-family: Karla, sans-serif;
+  font-size: var(--step--1);
+  color: var(--moon-dim);
+  line-height: 1.7;
+  margin-top: var(--s7);
+  padding-top: var(--s5);
+  border-top: 1px solid var(--edge-faint);
+}
+
+/* ------------------------------------------------------------------ 4. */
+/* One column. There is no second column anywhere on this site. */
+.column {
+  width: min(100% - 3rem, var(--column));
+  margin-inline: auto;
+}
+.column--wide { width: min(100% - 3rem, var(--column-wide)); margin-inline: auto; }
+
+/* the silence */
+.quiet   { padding-block: var(--s10); }
+.quiet--half { padding-block: var(--s8); }
+.quiet--slate { background: var(--slate); }
+
+/* a passage that sits slightly forward of the page */
+.raised {
+  background: var(--slate);
+  padding: var(--s7) var(--s6);
+}
+
+/* the only horizontal rule on the site, and it means "a long pause" */
+.pause {
+  border: 0;
+  height: 1px;
+  background: var(--edge-faint);
+  width: 4rem;
+  margin: var(--s8) 0;
+}
+.pause--centred { margin-inline: auto; }
+
+/* ------------------------------------------------------------------ 5. */
+.masthead { padding-block: var(--s6); }
+.masthead__inner {
+  width: min(100% - 3rem, var(--column-wide));
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s5);
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s4);
+  text-decoration: none;
+  color: var(--moon);
+  min-height: 44px;
+}
+.brand__mark { width: 26px; height: 34px; flex: none; }
+.brand__name {
+  font-size: var(--step-1);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+.brand__name span {
+  display: block;
+  font-family: Karla, sans-serif;
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  color: var(--moon-dim);
+  margin-top: 0.3em;
+}
+
+.nav__toggle, .nav__label { display: none; }
+.nav__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s5);
+  margin: 0; padding: 0;
+  font-family: Karla, sans-serif;
+  font-size: var(--step--1);
+  letter-spacing: 0.02em;
+}
+.nav__list a {
+  color: var(--moon-dim);
+  text-decoration: none;
+  display: inline-block;
+  padding-block: var(--s3);
+  min-height: 44px;
+}
+.nav__list a:hover { color: var(--amber); }
+.nav__list a[aria-current="page"] { color: var(--moon); }
+
+/* ------------------------------------------------------------------ 6. */
+.hero { padding-block: var(--s5) var(--s10); }
+.hero__figure { margin: 0 0 var(--s8); }
+.hero__figure img {
+  width: 100%;
+  height: clamp(20rem, 56vh, 34rem);
+  object-fit: cover;
+}
+.hero h1 { margin-bottom: var(--s6); }
+.hero__note {
+  font-family: Karla, sans-serif;
+  font-size: var(--step--1);
+  color: var(--moon-dim);
+  letter-spacing: 0.06em;
+  margin-bottom: var(--s6);
+}
+
+/* ------------------------------------------------------------------ 7.
+   The six-week course. Numbering is allowed here because this is a real
+   sequence: week two genuinely follows week one and cannot be taken first. */
+.sequence { margin: 0; padding: 0; list-style: none; counter-reset: week; }
+.sequence > li {
+  counter-increment: week;
+  padding-block: var(--s7);
+  border-top: 1px solid var(--edge-faint);
+}
+.sequence > li:last-child { border-bottom: 1px solid var(--edge-faint); }
+.sequence > li::before {
+  content: "Week " counter(week);
+  display: block;
+  font-family: Karla, sans-serif;
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  color: var(--amber);
+  margin-bottom: var(--s4);
+}
+.sequence h3 { margin-bottom: var(--s4); }
+.sequence__meta {
+  font-family: Karla, sans-serif;
+  font-size: var(--step--1);
+  color: var(--moon-dim);
+  margin-top: var(--s4);
+}
+
+/* a plain list of things with a time or a price against each */
+.ledger { margin: 0; }
+.ledger > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s4);
+  justify-content: space-between;
+  align-items: baseline;
+  padding-block: var(--s4);
+  border-bottom: 1px solid var(--edge-faint);
+}
+.ledger dt { font-size: var(--step-0); }
+.ledger dd {
+  margin: 0;
+  font-family: Karla, sans-serif;
+  font-size: var(--step--1);
+  color: var(--moon-dim);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+/* ------------------------------------------------------------------ 8. */
+figure { margin: var(--s8) 0; }
+figure img { width: 100%; }
+figcaption {
+  font-family: Karla, sans-serif;
+  font-size: var(--step--1);
+  color: var(--moon-dim);
+  margin-top: var(--s4);
+  line-height: 1.7;
+}
+
+.note {
+  background: var(--slate);
+  padding: var(--s6);
+  margin-block: var(--s7);
+}
+.note h3 { font-size: var(--step-1); }
+.note p:last-child { margin-bottom: 0; }
+
+.btn {
+  display: inline-block;
+  font-family: Karla, sans-serif;
+  font-size: var(--step--1);
+  letter-spacing: 0.1em;
+  min-height: 44px;
+  padding: var(--s4) var(--s6);
+  color: var(--ink);
+  background: var(--moon);
+  border: 1px solid var(--moon);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 150ms linear, color 150ms linear;
+}
+.btn:hover { background: var(--amber); border-color: var(--amber); color: var(--ink); }
+.btn--quiet { background: transparent; color: var(--moon); border-color: var(--edge); }
+.btn--quiet:hover { background: transparent; border-color: var(--amber); color: var(--amber); }
+
+/* forms */
+.form { margin-top: var(--s7); }
+.field { margin-bottom: var(--s6); }
+.field label {
+  display: block;
+  font-family: Karla, sans-serif;
+  font-size: var(--step--1);
+  letter-spacing: 0.08em;
+  color: var(--moon-dim);
+  margin-bottom: var(--s3);
+}
+.field input, .field select, .field textarea {
+  font-family: Karla, sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  min-height: 44px;
+  padding: var(--s3) var(--s4);
+  background: var(--slate);
+  color: var(--moon);
+  border: 1px solid var(--edge);
+  border-radius: 0;
+}
+.field textarea { min-height: 10rem; resize: vertical; line-height: 1.6; }
+.field .hint {
+  display: block;
+  font-family: Karla, sans-serif;
+  font-size: var(--step--1);
+  color: var(--moon-dim);
+  margin-top: var(--s3);
+}
+
+/* ad slots — reserved to exact dimensions so the page never moves */
+.ad-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--edge-faint);
+  background: var(--slate);
+  margin-inline: auto;
+}
+.ad-slot::before {
+  content: "Advertisement";
+  font-family: Karla, sans-serif;
+  font-size: 0.625rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--moon-dim);
+}
+.ad-slot--leaderboard { width: 728px; max-width: 100%; height: 90px; margin-block: var(--s5); }
+.ad-slot--incontent   { width: 336px; max-width: 100%; height: 280px; margin-block: var(--s9); }
+.ad-slot--rail        { width: 300px; max-width: 100%; height: 250px; margin-block: var(--s6); }
+
+/* prose, for policies and journal pieces */
+.prose h2 { font-size: var(--step-2); margin-top: var(--s8); }
+.prose h2:first-of-type { margin-top: var(--s6); }
+.prose h3 { margin-top: var(--s7); }
+.prose ul, .prose ol { margin: 0 0 var(--s5); padding-left: 1.4em; }
+.prose li { margin-bottom: var(--s3); }
+.prose li::marker { color: var(--moon-dim); }
+.prose .addr { color: var(--moon-dim); border-top: 1px solid var(--edge-faint); padding-top: var(--s5); }
+.prose .lede { font-size: var(--step-1); margin-bottom: var(--s6); }
+.prose .stamp { margin-top: var(--s5); }
+
+.byline {
+  font-family: Karla, sans-serif;
+  font-size: var(--step--1);
+  color: var(--moon-dim);
+  letter-spacing: 0.02em;
+}
+
+.breadcrumb {
+  font-family: Karla, sans-serif;
+  font-size: var(--step--1);
+  color: var(--moon-dim);
+  padding-block: var(--s5);
+}
+.breadcrumb a { color: var(--moon-dim); }
+.breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: var(--s3); margin: 0; padding: 0; }
+.breadcrumb li + li::before { content: "\2014"; margin-right: var(--s3); color: var(--edge); }
+
+/* the list of writing — still one column, still no cards */
+.entries { list-style: none; margin: 0; padding: 0; }
+.entries > li {
+  padding-block: var(--s7);
+  border-top: 1px solid var(--edge-faint);
+}
+.entries > li:last-child { border-bottom: 1px solid var(--edge-faint); }
+.entries h3 { margin-bottom: var(--s3); }
+.entries h3 a { text-decoration: none; }
+.entries h3 a:hover { color: var(--amber); }
+
+/* ------------------------------------------------------------------ 9. */
+.colophon {
+  padding-block: var(--s9) var(--s7);
+  border-top: 1px solid var(--edge-faint);
+}
+.colophon__inner {
+  width: min(100% - 3rem, var(--column-wide));
+  margin-inline: auto;
+  font-family: Karla, sans-serif;
+  font-size: var(--step--1);
+  line-height: 1.9;
+  color: var(--moon-dim);
+}
+.colophon h2, .colophon h3 {
+  font-family: Karla, sans-serif;
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  color: var(--moon);
+  margin-bottom: var(--s4);
+  font-weight: 400;
+}
+.colophon ul { list-style: none; margin: 0 0 var(--s7); padding: 0; }
+.colophon li { margin-bottom: var(--s2); }
+.colophon a { color: var(--moon-dim); text-decoration: none; }
+.colophon a:hover { color: var(--amber); text-decoration: underline; }
+.colophon address { font-style: normal; margin-bottom: var(--s7); }
+.colophon__legal {
+  margin-top: var(--s7);
+  padding-top: var(--s5);
+  border-top: 1px solid var(--edge-faint);
+}
+.colophon__legal p { margin-bottom: var(--s3); }
+
+/* ------------------------------------------------------------------ 10. */
+@media (max-width: 48rem) {
+  :root { --s10: 7rem; --s9: 5rem; --s8: 3.5rem; }
+
+  .masthead__inner { position: relative; }
+  .nav__label {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: var(--s3) var(--s5);
+    border: 1px solid var(--edge);
+    font-family: Karla, sans-serif;
+    font-size: var(--step--1);
+    letter-spacing: 0.1em;
+    color: var(--moon);
+    cursor: pointer;
+  }
+  .nav__toggle:focus-visible + .nav__label { outline: 2px solid var(--amber); outline-offset: 4px; }
+  .nav__list { display: none; flex-direction: column; gap: 0; width: 100%; }
+  .nav__toggle:checked ~ .nav__list { display: flex; }
+  .nav__list li { border-top: 1px solid var(--edge-faint); }
+  .nav__list a { display: block; padding: var(--s4) 0; }
+
+  .hero { padding-block: var(--s7) var(--s9); }
+  .hero__figure img { height: 16rem; }
+  .raised { padding: var(--s6) var(--s5); }
+  .ad-slot--leaderboard { width: 320px; height: 100px; }
+}
+
+@media (max-width: 26rem) {
+  .column, .column--wide, .masthead__inner, .colophon__inner { width: calc(100% - 2rem); }
+  .ledger > div { flex-direction: column; gap: var(--s1); }
+  .ledger dd { text-align: left; }
+}
+
+/* Two transitions exist on this site, both on the button. Reduced motion
+   removes them by name; the project forbids !important. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn, a { transition: none; }
+}
+
+@media print {
+  .ad-slot, .masthead nav, .colophon ul { display: none; }
+  body { background: #fff; color: #000; }
+  .raised, .note { background: #f4f4f4; }
+}

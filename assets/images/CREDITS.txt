@@ -1,0 +1,92 @@
+IMAGE CREDITS  —  Stillpoint Yin & Meditation
+=============================================
+Every photograph below was downloaded from Pexels and is used under the Pexels
+License (free for commercial and non-commercial use, attribution not required;
+photographers are named here as a courtesy). Each file was resized and
+re-compressed locally before use. Nothing on this site is hotlinked.
+The SVG mark and favicon are original drawings and are not listed here.
+
+hero/hero-candle-room.jpg
+    source      : https://www.pexels.com/photo/a-candle-in-a-room-24447135/
+    direct file : https://images.pexels.com/photos/24447135/pexels-photo-24447135.jpeg?auto=compress&cs=tinysrgb&w=2400
+    photographer: Pexels contributor
+    license     : Pexels License - free to use, no attribution required
+    dimensions  : 1800x1012   size: 92KB
+
+hero/hero-candlelight-wide.jpg
+    source      : https://www.pexels.com/photo/cozy-candlelight-in-dark-room-scene-33010593/
+    direct file : https://images.pexels.com/photos/33010593/pexels-photo-33010593.jpeg?auto=compress&cs=tinysrgb&w=2400
+    photographer: Pexels contributor
+    license     : Pexels License - free to use, no attribution required
+    dimensions  : 1600x1067   size: 84KB
+
+practice/props-blanket-cushions.jpg
+    source      : https://www.pexels.com/photo/candles-blanket-and-cushions-on-parquet-7596857/
+    direct file : https://images.pexels.com/photos/7596857/pexels-photo-7596857.jpeg?auto=compress&cs=tinysrgb&w=2400
+    photographer: Pexels contributor
+    license     : Pexels License - free to use, no attribution required
+    dimensions  : 900x600   size: 110KB
+
+practice/practice-supported-rest.jpg
+    source      : https://www.pexels.com/photo/woman-lying-down-on-floor-relaxing-and-meditating-6998214/
+    direct file : https://images.pexels.com/photos/6998214/pexels-photo-6998214.jpeg?auto=compress&cs=tinysrgb&w=2400
+    photographer: Pexels contributor
+    license     : Pexels License - free to use, no attribution required
+    dimensions  : 900x600   size: 70KB
+
+practice/practice-seated.jpg
+    source      : https://www.pexels.com/photo/a-person-sitting-on-the-floor-6739057/
+    direct file : https://images.pexels.com/photos/6739057/pexels-photo-6739057.jpeg?auto=compress&cs=tinysrgb&w=2400
+    photographer: Pexels contributor
+    license     : Pexels License - free to use, no attribution required
+    dimensions  : 900x600   size: 45KB
+
+practice/practice-long-hold.jpg
+    source      : https://www.pexels.com/photo/woman-practicing-yoga-9338691/
+    direct file : https://images.pexels.com/photos/9338691/pexels-photo-9338691.jpeg?auto=compress&cs=tinysrgb&w=2400
+    photographer: Pexels contributor
+    license     : Pexels License - free to use, no attribution required
+    dimensions  : 900x600   size: 44KB
+
+details/details-bolsters-shelf.jpg
+    source      : https://www.pexels.com/photo/still-life-photography-of-rolled-yoga-mats-8437013/
+    direct file : https://images.pexels.com/photos/8437013/pexels-photo-8437013.jpeg?auto=compress&cs=tinysrgb&w=2400
+    photographer: Yan Krukau
+    license     : Pexels License - free to use, no attribution required
+    dimensions  : 900x600   size: 71KB
+
+details/details-hands-resting.jpg
+    source      : https://www.pexels.com/photo/a-close-up-shot-of-a-persons-hands-together-5978317/
+    direct file : https://images.pexels.com/photos/5978317/pexels-photo-5978317.jpeg?auto=compress&cs=tinysrgb&w=2400
+    photographer: Pexels contributor
+    license     : Pexels License - free to use, no attribution required
+    dimensions  : 900x600   size: 37KB
+
+details/details-window-dusk.jpg
+    source      : https://www.pexels.com/photo/window-in-dark-room-11961955/
+    direct file : https://images.pexels.com/photos/11961955/pexels-photo-11961955.jpeg?auto=compress&cs=tinysrgb&w=2400
+    photographer: Pexels contributor
+    license     : Pexels License - free to use, no attribution required
+    dimensions  : 900x600   size: 64KB
+
+details/details-candles.jpg
+    source      : https://www.pexels.com/photo/lighted-candles-on-candle-holders-6143616/
+    direct file : https://images.pexels.com/photos/6143616/pexels-photo-6143616.jpeg?auto=compress&cs=tinysrgb&w=2400
+    photographer: Pexels contributor
+    license     : Pexels License - free to use, no attribution required
+    dimensions  : 900x600   size: 44KB
+
+teacher/teacher-rosalind-vega.jpg
+    source      : https://www.pexels.com/photo/a-woman-with-her-eyes-closed-9862661/
+    direct file : https://images.pexels.com/photos/9862661/pexels-photo-9862661.jpeg?auto=compress&cs=tinysrgb&w=2400
+    photographer: Pexels contributor
+    license     : Pexels License - free to use, no attribution required
+    dimensions  : 640x800   size: 36KB
+
+og/og-stillpoint-yin.jpg
+    source      : https://www.pexels.com/photo/candle-in-dark-room-26183931/
+    direct file : https://images.pexels.com/photos/26183931/pexels-photo-26183931.jpeg?auto=compress&cs=tinysrgb&w=2400
+    photographer: Pexels contributor
+    license     : Pexels License - free to use, no attribution required
+    dimensions  : 1200x630   size: 109KB
+
